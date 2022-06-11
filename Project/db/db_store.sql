@@ -22,8 +22,8 @@ CREATE TABLE tb_product (
 INSERT INTO tb_category (name, description) 
 VALUES 
 ('Informática', 'Produtos de informática e acessórios para computadores.'),
-("Escritório", "Produtos de escritório e acessórios para escritório."),
-("Eletrônicos", "Produtos de eletrônicos e acessórios para eletrônicos.");
+("Escritório", "Produtos e acessórios para escritório."),
+("Eletrônicos", "Produtos e acessórios eletrônicos.");
 
 INSERT INTO tb_product (name, description, photo, price, category_id, quantity, created_at)
 VALUES
