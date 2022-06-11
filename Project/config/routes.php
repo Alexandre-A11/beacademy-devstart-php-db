@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use App\Controller\CategoryController;
-use App\Controller\ClienteController;
+use App\Controller\ClientController;
 use App\Controller\IndexController;
 use App\Controller\ProductController;
 
@@ -17,10 +17,10 @@ function createRoute(string $controllerName, string $methodName) {
 $routes = [
     "/" => createRoute(IndexController::class, "indexAction"),
     "/login" => createRoute(IndexController::class, "loginAction"),
-    "/client" => createRoute(ClienteController::class, "listAction"),
-    "/client/new" => createRoute(ClienteController::class, "addAction"),
-    "/client/edit" => createRoute(ClienteController::class, "editAction"),
-    "/client/delete" => createRoute(ClienteController::class, "deleteAction"),
+    "/client" => createRoute(ClientController::class, "listAction"),
+    "/client/new" => createRoute(ClientController::class, "addAction"),
+    "/client/edit" => createRoute(ClientController::class, "editAction"),
+    "/client/delete" => createRoute(ClientController::class, "deleteAction"),
     "/products" => createRoute(ProductController::class, "listAction"),
     "/products/new" => createRoute(ProductController::class, "addAction"),
     "/products/edit" => createRoute(ProductController::class, "editAction"),

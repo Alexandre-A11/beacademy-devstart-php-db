@@ -10,6 +10,8 @@
             <th>Nome</th>
             <th>E-mail</th>
             <th>CPF</th>
+            <th>Criado em</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -20,9 +22,10 @@
                 <td><?= $name ?></td>
                 <td><?= $email ?></td>
                 <td><?= $cpf ?></td>
+                <td><?= $created_at ?></td>
                 <td>
-                    <a href="/client/edit?id<?= $id ?>" class="btn btn-warning btn-sm">Editar</a>
-                    <a href="/client/delete?id<?= $id ?>" class="btn btn-danger btn-sm">Excluir</a>
+                    <a href="/client/edit?id=<?= $id ?>" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="/client/delete?id=<?= $id ?>" class="btn btn-danger btn-sm">Excluir</a>
                 </td>
             </tr>
         <?php endwhile; ?>
