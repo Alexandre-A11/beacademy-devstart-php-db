@@ -3,8 +3,8 @@ CREATE DATABASE db_store;
 USE db_store;
 
 CREATE TABLE tb_category (
-    id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50) NOT NULL,
+    id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT
+    name VARCHAR(50) NOT NULL
     description VARCHAR(100) NOT NULL
 );
 
@@ -16,6 +16,15 @@ CREATE TABLE tb_product (
     price FLOAT(5,2) NOT NULL,
     category_id INT(11) NOT NULL,
     quantity INT(5) NOT NULL,
+    created_at DATETIME NOT NULL
+);
+
+CREATE TABLE tb_client (
+    id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) UNIQUE NOT NULL,
+    cpf VARCHAR(11) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
     created_at DATETIME NOT NULL
 );
 
