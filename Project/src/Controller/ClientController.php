@@ -30,9 +30,10 @@ class ClientController extends AbstractController {
             $result = $connection->prepare($query);
             $result->execute();
 
-            echo "Cliente cadastrado com sucesso!";
+            parent::renderMessage("Cliente cadastrado com sucesso!", parent::getPage());
+        } else {
+            parent::render("client/add");
         }
-        parent::render("client/add");
     }
 
     public function deleteAction(): void {
@@ -43,7 +44,7 @@ class ClientController extends AbstractController {
         $result = $connection->prepare($query);
         $result->execute();
 
-        echo "Cliente excluído com sucesso!";
+        parent::renderMessage("Cliente excluído com sucesso!", parent::getPage());
     }
 
     public function editAction(): void {
@@ -69,15 +70,16 @@ class ClientController extends AbstractController {
                     $query = "UPDATE tb_client SET name = '{$newName}', email = '{$newEmail}' WHERE id = {$id};";
                 }
 
-                echo "Cadastro atualizado com sucesso!";
+                parent::renderMessage("Cadastro atualizado com sucesso!", parent::getPage());
             } else {
-                echo "Senha atual incorreta!";
+                $result = $connection->prepare($query);
+                $result->execute();
+                echo parent::renderErrorMessage("Senha atual incorreta!");
             }
+        } else {
+            $result = $connection->prepare($query);
+            $result->execute();
         }
-
-        $result = $connection->prepare($query);
-        $result->execute();
-
         parent::render("client/edit", $result->fetch(\PDO::FETCH_ASSOC));
     }
 }
