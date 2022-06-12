@@ -15,6 +15,6 @@
         <a href="/" class="btn btn-outline-dark">Início</a>
         <a href="/category" class="btn btn-outline-dark">Categorias</a>
         <a href="/client" class="btn btn-outline-dark">Clientes</a>
-        <a href="/products" class="btn btn-outline-dark">Produtos</a>
+        <a href="/product" class="btn btn-outline-dark">Produtos</a>
     </nav>
     <hr>

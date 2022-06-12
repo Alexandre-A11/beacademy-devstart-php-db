@@ -36,4 +36,11 @@ VALUES
 
 INSERT INTO tb_product (name, description, photo, price, category_id, quantity, created_at)
 VALUES
-("Teclado Mecânico Gamer Corsair K95", "Estrutura em alumínio anodizado com um conjunto de 104/105 blocos de tecla de PBT por injeção dupla, construída para durar uma vida inteira de jogos. ","https://images-na.ssl-images-amazon.com/images/G/32/apparel/rcxgs/tile._CB483369971_.gif", 1403,90)
+("Teclado Mecânico Gamer Corsair K95", "Estrutura em alumínio anodizado com um conjunto de 104/105 blocos de tecla de PBT por injeção dupla.","https://www.corsair.com/corsairmedia/sys_master/productcontent/k68-spill-resistant-keyboard-Content-22.jpg", 903.90, 1, 10, "2022-06-12 10:58:43"),
+("Kindle 10a. geração", "Conheça o novo Kindle, agora com iluminação embutida ajustável.", "https://m.media-amazon.com/images/I/61X0ISBpD-L._AC_SL1000_.jpg", 350.00, 1, 37, "2022-06-12 10:59:25"),
+("Echo Dot (3ª Geração)", "O Echo Dot é o nosso smart speaker de maior sucesso.", "https://m.media-amazon.com/images/I/51SYrUFOIVL._AC_SL1000_.jpg", 250.00, 1, 67, "2022-06-12 11:05:33"),
+("Headphone Fone de Ouvido Havit HV-H2002d", "Gaming Headphone Havit HV-H2002d", "https://m.media-amazon.com/images/I/414VCtINXwL._AC_.jpg", 235.00, 1, 22, "2022-06-12 11:07:22"),
+("Raspberry Pi 4 Computer Model B 4 Gb RAM", "A Raspberry Pi 4B inclui um alto-desempenho 64-bit processador quad-core ", "https://m.media-amazon.com/images/I/71MEi5TC7IL._AC_SL1500_.jpg", 999.90, 1, 3, "2022-06-12 11:09:15")
+
+
+UPDATE tb_product SET photo = "https://m.media-amazon.com/images/I/61WohGtw2tL._AC_SL1200_.jpg" WHERE id = 16;

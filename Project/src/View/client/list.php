@@ -1,5 +1,9 @@
 <h1>Clientes</h1>
 
+<div class="mb-3 text-end">
+    <a href="/client/new" class="btn btn-outline-primary">Cadastrar Cliente</a>
+</div>
+
 <table class="table table-hover table-striped">
     <thead class="table-dark">
         <tr>
