@@ -6,6 +6,8 @@
 -   Senha só pode ser alterada com a confirmação da senha antiga
 -   Senhas criptografadas usando Argon2
 -   CRUD Clientes
+-   
+### Professor [Alessandro Feitoza](https://github.com/alessandrofeitoza)
 
 ### Comandos Banco de Dados
 
