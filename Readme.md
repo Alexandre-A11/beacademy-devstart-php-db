@@ -3,6 +3,7 @@
 ## PHP e Banco de Dados
 
 -   Projeto CRUD
+-   Senha só pode ser alterada com a confirmação da senha antiga
 -   Senhas criptografadas usando Argon2
 -   CRUD Clientes
 

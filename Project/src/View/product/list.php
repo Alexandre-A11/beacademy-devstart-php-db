@@ -7,7 +7,7 @@
 
 <table class="table table-hover table-striped">
     <thead class="table-dark">
-        <tr>
+        <tr class="text-center">
             <th>#ID</th>
             <th>Nome</th>
             <th>Descrição</th>
@@ -29,7 +29,7 @@
                 <td>R$ <?= $price ?></td>
                 <td><?= $quantity ?></td>
                 <td><?= $created_at ?></td>
-                <td>
+                <td style="width: 9rem">
                     <a href="/product/edit?id=<?= $id ?>" class="btn btn-warning btn-sm">Editar</a>
                     <a href="/product/delete?id=<?= $id ?>" class="btn btn-danger btn-sm">Excluir</a>
                 </td>
