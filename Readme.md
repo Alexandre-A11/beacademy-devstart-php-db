@@ -1,3 +1,11 @@
+# BeAcademy + Paylivre
+
+## PHP e Banco de Dados
+
+-   Projeto CRUD
+-   Senhas criptografadas usando Argon2
+-   CRUD Clientes
+
 ### Comandos Banco de Dados
 
 ##### Criar Banco de Dados
