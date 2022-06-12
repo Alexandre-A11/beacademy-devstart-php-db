@@ -26,9 +26,10 @@ class CategoryController extends AbstractController {
             $result = $connection->prepare($query);
             $result->execute();
 
-            echo "Categoria cadastrada com sucesso!";
+            parent::renderMessage("Categoria cadastrada com sucesso!", parent::getPage());
+        } else {
+            parent::render("category/add");
         }
-        parent::render("category/add");
     }
 
     public function deleteAction(): void {
@@ -39,7 +40,7 @@ class CategoryController extends AbstractController {
         $result = $connection->prepare($query);
         $result->execute();
 
-        echo "Categoria excluída com sucesso!";
+        parent::renderMessage("Categoria excluída com sucesso!", parent::getPage());
     }
 
     public function editAction(): void {
@@ -59,9 +60,9 @@ class CategoryController extends AbstractController {
         $result->execute();
 
         if ($_POST) {
-            echo "Categoria alterada com sucesso!";
+            parent::renderMessage("Categoria alterada com sucesso!", parent::getPage());
+        } else {
+            parent::render("category/edit", $result->fetch(\PDO::FETCH_ASSOC));
         }
-
-        parent::render("category/edit", $result->fetch(\PDO::FETCH_ASSOC));
     }
 }
