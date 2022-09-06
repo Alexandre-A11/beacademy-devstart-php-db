@@ -3,8 +3,8 @@ CREATE DATABASE db_store;
 USE db_store;
 
 CREATE TABLE tb_category (
-    id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT
-    name VARCHAR(50) NOT NULL
+    id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
     description VARCHAR(100) NOT NULL
 );
 
@@ -40,7 +40,7 @@ VALUES
 ("Kindle 10a. geração", "Conheça o novo Kindle, agora com iluminação embutida ajustável.", "https://m.media-amazon.com/images/I/61X0ISBpD-L._AC_SL1000_.jpg", 350.00, 1, 37, "2022-06-12 10:59:25"),
 ("Echo Dot (3ª Geração)", "O Echo Dot é o nosso smart speaker de maior sucesso.", "https://m.media-amazon.com/images/I/51SYrUFOIVL._AC_SL1000_.jpg", 250.00, 1, 67, "2022-06-12 11:05:33"),
 ("Headphone Fone de Ouvido Havit HV-H2002d", "Gaming Headphone Havit HV-H2002d", "https://m.media-amazon.com/images/I/414VCtINXwL._AC_.jpg", 235.00, 1, 22, "2022-06-12 11:07:22"),
-("Raspberry Pi 4 Computer Model B 4 Gb RAM", "A Raspberry Pi 4B inclui um alto-desempenho 64-bit processador quad-core ", "https://m.media-amazon.com/images/I/71MEi5TC7IL._AC_SL1500_.jpg", 999.90, 1, 3, "2022-06-12 11:09:15")
+("Raspberry Pi 4 Computer Model B 4 Gb RAM", "A Raspberry Pi 4B inclui um alto-desempenho 64-bit processador quad-core ", "https://m.media-amazon.com/images/I/71MEi5TC7IL._AC_SL1500_.jpg", 999.90, 1, 3, "2022-06-12 11:09:15");
 
 
 UPDATE tb_product SET photo = "https://m.media-amazon.com/images/I/61WohGtw2tL._AC_SL1200_.jpg" WHERE id = 16;
